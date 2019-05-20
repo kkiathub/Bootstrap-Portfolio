@@ -68,22 +68,17 @@ h3 {
 }
 
 #logo {
-  float: left;
-  width: 250px;
-  height: 90px;
+  /* float: left; */
+  /* width: 250px; */
+  height: 80px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 70px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
 }
 
 nav a {
@@ -103,14 +98,15 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
-  clear: both;
+  /* padding: 30px 0; */
+  /* clear: both; */
   font-size: 12px;
   color: #cccccc;
   text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
 }
+
 
 h3, h2 {
   padding-bottom: 20px;
@@ -212,4 +208,32 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+.menu {
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  #logo {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px;
+  }
+  .menu {
+    margin: auto;
+  }
+
+  .main-section {
+    margin: 20px 0px;
+  }
+
+  .auth-image {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    border-width: 6px;
+  }
 }
