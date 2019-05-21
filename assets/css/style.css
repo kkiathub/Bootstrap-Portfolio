@@ -134,7 +134,6 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -142,12 +141,12 @@ h3, h2 {
 /* portfolio page */
 .work {
   position: relative;
-  width: 274px;
+  /* width: 274px; */
   margin: 20px 0 25px;
 }
 
 .work img {
-  width: 100%;
+  /* width: 100%; */
   border: 0 none;
   opacity: 0.8;
 }
@@ -196,6 +195,19 @@ input[type=submit] {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .auth-image {
+    width: 200px;
+  }
+
+  .work {
+    width: 274px;
+  }
+
+  .work img {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   #logo {
     width: 100%;
@@ -217,7 +229,7 @@ input[type=submit] {
     border-width: 6px;
   }
 
- .auth-image, .work, #contact-form {
+  #contact-form {
     width: 100%;
   }
 
